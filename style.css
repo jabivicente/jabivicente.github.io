@@ -1,66 +1,31 @@
 html {
-    height: 100%;
-    box-sizing: border-box;
+    height: 100%; /* Establece la altura del elemento html */
+    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en la altura total */
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: inherit; /* Hereda box-sizing */
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+    flex-direction: column; /* Estructura la página en una dirección de columna */
+    min-height: 100%; /* El mínimo de altura para el body es el 100% de la altura de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    font-family: 'Arial', sans-serif; /* Establece la fuente por defecto */
+    /* No se debe poner overflow: hidden aquí si queremos permitir desplazamiento */
 }
 
 .content {
-    flex: 1;
-    padding: 2rem;
+    flex: 1; /* Permite que el contenido crezca para ocupar el espacio disponible */
+    padding: 2rem; /* Agrega un padding para el contenido */
+    /* Las siguientes propiedades son para el fondo */
     background-image: url('Background.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Si quieres que el fondo se desplace con el contenido, cambia a 'scroll' */
 }
 
-header {
-    background: white;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-#about img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
+/* Estilos para header, nav, #about, h1, y footer van aquí */
