@@ -1,13 +1,13 @@
-body {
-    font-family: 'Arial', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('Background.webp'); /* Asegúrate de que la ruta a la imagen sea correcta */
-    background-size: cover; /* Esto hará que la imagen de fondo cubra toda la página */
-    background-position: center center; /* Centra la imagen en la página */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* La imagen de fondo será fija en la ventana de visualización */
-    background-color: #f0f0f0; /* Color de fondo en caso de que la imagen no cargue */
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: white; /* O el color que prefieras */
+    background: white;
 }
 
 nav ul {
@@ -29,26 +29,35 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000; /* Cambia el color según tu esquema */
+    color: #000;
 }
 
-#about {
-    display: flex;
-    align-items: center;
+.content {
+    flex: 1;
     padding: 2rem;
+    background-image: url('Background.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #about img {
     border-radius: 50%;
-    width: 150px; /* Ajusta el ancho según necesites */
-    height: 150px; /* Ajusta la altura según necesites */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin perder su aspecto */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 2rem;
 }
 
 h1 {
-    margin-left: 2rem;
-    font-size: 3rem; /* Ajusta el tamaño del título */
+    font-size: 3rem;
 }
 
 footer {
-    background: #333; /* Cambia el color según tu esqu
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
