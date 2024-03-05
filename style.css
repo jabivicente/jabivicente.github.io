@@ -2,7 +2,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f0f0; /* Ajusta el color de fondo */
+    background-image: url('Background.webb'); /* Agrega esta línea */
+    background-size: cover; /* Asegura que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: #f0f0f0; /* Color de fondo en caso de que la imagen no cargue */
 }
 
 header {
@@ -44,8 +48,6 @@ h1 {
     margin-left: 2rem;
     font-size: 3rem; /* Ajusta el tamaño del título */
 }
-
-/* Continúa con el resto de tus estilos */
 
 footer {
     background: #333; /* Cambia el color según tu esquema */
