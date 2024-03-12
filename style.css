@@ -72,3 +72,24 @@ footer {
     width: 100%;
     /* Elimina position y bottom ya que flexbox se encarga del posicionamiento */
 }
+.project-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.project-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 25px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.project-button:hover {
+    background-color: #007B8A;
+}
