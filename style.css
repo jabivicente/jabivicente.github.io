@@ -1,3 +1,10 @@
+body {
+    background-image: url('Background.jpg'); /* Asume que el fondo se llama 'Background.jpg' */
+    background-size: cover; /* Asegura que el fondo cubra toda la página */
+    background-position: center; /* Centra el fondo en la página */
+    background-attachment: fixed; /* El fondo se mantiene fijo al hacer scroll */
+}
+
 /* Estilos para el encabezado y navegación */
 header {
     background-color: #f0f0f0; /* Fondo gris para el header */
@@ -5,6 +12,7 @@ header {
     position: fixed; /* Fijar el header en la parte superior */
     width: 100%;
     box-sizing: border-box;
+    z-index: 1000; /* Asegura que el header esté sobre el fondo */
 }
 
 header .logo {
@@ -33,7 +41,7 @@ header nav ul li a {
     color: black;
 }
 
-/* Resto de estilos */
+/* Resto de estilos, como el contenido centrado, tarjeta de perfil, imágenes, botones y footer */
 .centered-content {
     display: flex;
     justify-content: center;
