@@ -1,32 +1,66 @@
-/* Existing styles remain unchanged */
+/* Estilos para el encabezado y navegación */
+header {
+    background-color: #f0f0f0; /* Fondo gris para el header */
+    padding: 20px 0;
+    position: fixed; /* Fijar el header en la parte superior */
+    width: 100%;
+    box-sizing: border-box;
+}
 
-/* Add the following new styles */
+header .logo {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Resto de estilos */
 .centered-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* 80% of the viewport height */
+    min-height: 80vh;
     padding: 20px;
+    padding-top: 100px; /* Ajuste para el header fijo */
 }
 
 .profile-card {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
-    gap: 20px; /* space between elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
 }
 
 .profile-img {
     border-radius: 50%;
-    width: 150px; /* Adjust the size as needed */
+    width: 150px;
 }
 
 .buttons {
     display: flex;
-    gap: 10px; /* space between buttons */
+    gap: 10px;
 }
 
 .button {
@@ -35,9 +69,15 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    color: #fff; /* white text */
+    color: #fff;
+    background-color: #007bff; /* Añadido color de fondo para los botones */
 }
 
 .button:hover {
-    opacity: 0.8; /* hover effect */
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
