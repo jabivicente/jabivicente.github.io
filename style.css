@@ -1,96 +1,48 @@
-html {
-    height: 100%; /* Full height */
-}
-
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Background.webp');
+    background: url('Background.webp') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Set default text color to white for the whole page */
-}
-
-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white; /* Make navigation links white */
-}
-
-main {
-    flex: 1;
-    overflow-y: auto;
-}
-
-#about {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-}
-
-#about img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 2rem;
-}
-
-h1, h2 {
-    font-size: 3rem;
-    color: white; /* Titles in white */
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-}
-
-.project-content {
-    display: none;
-    background-color: #f9f9f9;
+.content-box {
+    width: 80%; /* Adjust the width as needed */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the box */
     padding: 20px;
-    margin-top: 20px;
-    color: black; /* Override for project content, making it black for readability */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
 }
 
-.project-button {
-    background-color: #008CBA;
+.profile-img {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
     color: white;
-    padding: 15px 25px;
-    text-align: left;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
 }
 
-.project-button:hover {
-    background-color: #007B8A;
+.buttons {
+    margin-top: 15px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
