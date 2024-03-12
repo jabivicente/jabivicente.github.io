@@ -28,6 +28,28 @@
             <button id="projects-btn">Projects</button>
             <!-- Include social media icons here -->
         </section>
+        <section id="projects">
+    <h2>Projects</h2>
+    <p>I have been involved in a variety of projects ranging from web development to deep learning applications. Below are some of the projects I am most proud of...</p>
+    <div class="project">
+        <button class="project-button">Linear Equation Solver Project</button>
+        <div class="project-content">
+            <p>This Python project solves linear equations using NumPy, showcasing how mathematical problems can be tackled programmatically.</p>
+            <img src="ax_equals_b.png" alt="Linear equation representation">
+            <pre><code>import numpy as np
+
+def linear_solution(A, B):
+    try:
+        C = np.linalg.solve(A, B)
+        return C
+    except ValueError:
+         print("Something else went wrong")
+    except np.linalg.LinAlgError:
+        return "LinAlgError: The matrix A is singular and cannot be solved."</code></pre>
+            <p>Explanation: This code...</p>
+        </div>
+    </div>
+</section>
         
         <section id="cv">
             <h2>Resume</h2>
