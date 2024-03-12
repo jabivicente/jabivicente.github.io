@@ -1,20 +1,19 @@
 html {
-    height: 100%; /* Asegura que el elemento html tenga una altura del 100% */
+    height: 100%; /* Full height */
 }
 
 body {
-    /* Existing styles */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Background.webp');
-}
-
-.project-content, .project-button {
-    /* Existing styles */
-    color: white; /* Makes the text white */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
-}
-
-.project-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Set default text color to white for the whole page */
 }
 
 header {
@@ -22,14 +21,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    padding: 0; /* Asegúrate de que no haya padding por defecto */
-    margin: 0; /* Asegúrate de que no haya margen por defecto */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -38,13 +37,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: white; /* Make navigation links white */
 }
 
-/* Contenedor principal que contiene todas las secciones */
 main {
-    flex: 1; /* Permite que el main crezca y llene el espacio para empujar el footer hacia abajo */
-    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es muy largo */
+    flex: 1;
+    overflow-y: auto;
 }
 
 #about {
@@ -58,11 +56,12 @@ main {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-right: 2rem; /* Asegúrate de que haya espacio entre la imagen y el texto */
+    margin-right: 2rem;
 }
 
-h1 {
+h1, h2 {
     font-size: 3rem;
+    color: white; /* Titles in white */
 }
 
 footer {
@@ -71,13 +70,14 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    /* Elimina position y bottom ya que flexbox se encarga del posicionamiento */
 }
+
 .project-content {
     display: none;
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 20px;
+    color: black; /* Override for project content, making it black for readability */
 }
 
 .project-button {
