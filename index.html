@@ -75,5 +75,14 @@ def linear_solution(A, B):
         <p>Email: info@mysite.com</p>
         <!-- Follow: [Social Media Icons] -->
     </footer>
+
+    <script>
+document.querySelectorAll('.project-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const projectContent = button.nextElementSibling;
+        projectContent.style.display = projectContent.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
 </body>
 </html>
