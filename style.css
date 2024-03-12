@@ -1,5 +1,5 @@
 body {
-    background-image: url('Background.jpg'); /* Asume que el fondo se llama 'Background.jpg' */
+    background-image: url('Background.webp'); /* Asume que el fondo se llama 'Background.jpg' */
     background-size: cover; /* Asegura que el fondo cubra toda la página */
     background-position: center; /* Centra el fondo en la página */
     background-attachment: fixed; /* El fondo se mantiene fijo al hacer scroll */
