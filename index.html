@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#cv">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li> <!-- Link to your projects page -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,65 +24,28 @@
             <img src="Fotoperfil.jpg" alt="Javier Vicente Matas" class="profile-img">
             <h1>Hello</h1>
             <p>This is who I am and what I do. I am a passionate software developer with a keen interest in artificial intelligence and machine learning. With a background in computer science, I have honed my skills in various programming languages and technologies...</p>
-            <button id="cv-btn">Resume</button>
-            <button id="projects-btn">Projects</button>
-            <!-- Include social media icons here -->
         </section>
-        <section id="projects">
-    <h2>Projects</h2>
-    <p>I have been involved in a variety of projects ranging from web development to deep learning applications. Below are some of the projects I am most proud of...</p>
-    <div class="project">
-        <button class="project-button">Linear Equation Solver Project</button>
-        <div class="project-content">
-            <p>This Python project solves linear equations using NumPy, showcasing how mathematical problems can be tackled programmatically.</p>
-            <img src="ax_equals_b.png" alt="Linear equation representation">
-            <pre><code>import numpy as np
-
-def linear_solution(A, B):
-    try:
-        C = np.linalg.solve(A, B)
-        return C
-    except ValueError:
-         print("Something else went wrong")
-    except np.linalg.LinAlgError:
-        return "LinAlgError: The matrix A is singular and cannot be solved."</code></pre>
-            <p>Explanation: This code...</p>
-        </div>
-    </div>
-</section>
         
         <section id="cv">
             <h2>Resume</h2>
             <p>Here you can find my professional experience and educational background. I have worked with multiple companies and have contributed to numerous projects that have honed my skills...</p>
-            <!-- Agrega más contenido a tu CV aquí -->
         </section>
         
+        <!-- The projects section will just have a link to the projects page -->
         <section id="projects">
             <h2>Projects</h2>
-            <p>I have been involved in a variety of projects ranging from web development to deep learning applications. Below are some of the projects I am most proud of...</p>
-            <!-- Detalles de tus proyectos aquí -->
+            <p>Check out my projects <a href="projects.html">here</a>.</p>
         </section>
         
         <section id="contact">
             <h2>Contact</h2>
             <p>If you wish to get in touch with me, feel free to reach out via email or phone. You can also find me on social media platforms such as LinkedIn, Twitter, and GitHub...</p>
-            <!-- Información de contacto y formulario si es necesario -->
         </section>
     </main>
     
     <footer>
         <p>Call: +52-1-33-12345678</p>
         <p>Email: info@mysite.com</p>
-        <!-- Follow: [Social Media Icons] -->
     </footer>
-
-    <script>
-document.querySelectorAll('.project-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const projectContent = button.nextElementSibling;
-        projectContent.style.display = projectContent.style.display === 'block' ? 'none' : 'block';
-    });
-});
-</script>
 </body>
 </html>
