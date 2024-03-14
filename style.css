@@ -63,6 +63,7 @@ header nav ul li a {
 }
 
 .profile-img {
+    align-items: center;
     border-radius: 50%;
     width: 150px;
 }
