@@ -20,13 +20,37 @@
     
     <main>
         <section class="project-detail">
-            <img src="proyecto1.png" alt="Proyecto 1 Imagen" class="project-image-detail">
-            <div class="project-info-detail">
-                <h1>Linear Algebra Equations Solver</h1>
-                <p>Este proyecto es una herramienta simple diseñada para resolver ecuaciones lineales. Fue desarrollado utilizando [insertar tecnologías utilizadas], y su objetivo principal es [describir el objetivo]. A continuación, se muestra una descripción más detallada del proyecto, incluyendo su funcionalidad, cómo se utiliza, y cualquier otro detalle relevante que desees compartir.</p>
-            </div>
+            <h1>Linear Algebra Equations Solver</h1>
+            <p>The Linear Algebra Equations Solver is a Python-based tool designed to solve systems of linear equations. It leverages the power of NumPy, a fundamental package for scientific computing with Python, to compute the solutions. This tool tries to find the values of variables that satisfy a set of linear equations represented by matrices A (coefficients) and B (constants). If the matrix A is singular, meaning it does not have an inverse, the tool will inform the user that the system cannot be solved.</p>
+            
+            <section>
+                <h2>Try the Linear Algebra Equations Solver</h2>
+                <p><i>Note: This is a demonstration form. The actual functionality requires backend processing.</i></p>
+                <form id="solverForm">
+                    <label for="matrixA">Matrix A (coefficients):</label><br>
+                    <input type="text" id="matrixA" name="matrixA" placeholder="e.g., [[1,2],[3,4]]"><br>
+                    <label for="matrixB">Matrix B (constants):</label><br>
+                    <input type="text" id="matrixB" name="matrixB" placeholder="e.g., [5,6]"><br>
+                    <button type="button" onclick="alert('This is a demo. Processing must be done server-side.')">Solve</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Source Code</h2>
+                <pre>
+import numpy as np
+
+def linear_solution(A, B):
+    try:
+        C = np.linalg.solve(A, B)
+        return C
+    except ValueError:
+        print("Something else went wrong")
+    except np.linalg.LinAlgError:
+        return "LinAlgError: The matrix A is singular and cannot be solved."
+                </pre>
+            </section>
         </section>
-        <!-- Sección para contenido adicional si es necesario -->
     </main>
     
     <footer>
