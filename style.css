@@ -88,6 +88,12 @@ header nav ul li a {
 }
 
 footer {
+    background-color: black; /* Define el color de fondo como negro */
+    color: white; /* Cambia el color del texto a blanco para que sea legible */
+    width: 100%; /* Asegura que el footer ocupe toda la anchura */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    padding: 10px 20px; /* Añade algo de padding para no tener el texto pegado a los bordes */
+    /* Resto de tus estilos... */
     text-align: center;
     margin-top: 20px;
 }
