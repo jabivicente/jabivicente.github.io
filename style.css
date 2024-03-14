@@ -112,7 +112,7 @@ footer {
 }
 
 .project:first-child {
-    margin-top: 120px; /* Espacio adicional para compensar el header fijo */
+    margin-top: 800px; /* Espacio adicional para compensar el header fijo */
 }
 
 .project:hover {
