@@ -98,3 +98,36 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.project-image {
+    width: 150px; /* O el tamaño que prefieras */
+    height: auto;
+    border-radius: 4px; /* Si quieres las esquinas redondeadas */
+    margin: 10px; /* Espacio alrededor de la imagen */
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}
+
+.project-info p {
+    color: #555; /* Color para el texto descriptivo */
+}
