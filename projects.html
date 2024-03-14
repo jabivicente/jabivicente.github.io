@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <title>Projects - JavierVM</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Insert links to external fonts and stylesheets here -->
 </head>
 <body>
     <header>
-        <!-- You can replicate the header from your main page or make a simpler one -->
+        <div class="logo">Javier Vicente Matas</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">Curriculum Vitae</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <!-- Insert your projects content here -->
-        <section class="project">
-            <!-- Project details like the one you wrote in your main page -->
+        <!-- Sección de proyectos con tarjetas clicables que se abren en una nueva ventana -->
+        <section class="project" onclick="window.open('link_del_proyecto1.html', '_blank')">
+            <img src="imagen_del_proyecto1.jpg" alt="Descripción de la imagen del Proyecto 1" class="project-image">
+            <div class="project-info">
+                <h2>Título del Proyecto 1</h2>
+                <p>Descripción breve del Proyecto 1.</p>
+            </div>
         </section>
-        <!-- More projects can be added in the same way -->
+        <!-- Repite la estructura para cada proyecto adicional -->
     </main>
     
     <footer>
-        <!-- You can replicate the footer from your main page -->
+        <p>Call: +52-1-33-12345678</p>
+        <p>Email: info@mysite.com</p>
     </footer>
 </body>
 </html>
