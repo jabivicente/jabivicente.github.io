@@ -46,7 +46,6 @@ header nav ul li a {
     align-items: center;
     min-height: 80vh;
     padding: 20px;
-    padding-top: 100px; /* Ajuste para el header fijo */
 }
 
 .profile-card {
@@ -63,7 +62,6 @@ header nav ul li a {
 }
 
 .profile-img {
-    align-items: center;
     border-radius: 50%;
     width: 150px;
 }
@@ -98,6 +96,9 @@ footer {
 }
 
 .project {
+    margin: auto; /* Centra el proyecto horizontalmente */
+    padding: 20px;
+    max-width: 80%; /* Ancho máximo del proyecto. Ajusta al valor que prefieras */
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -130,7 +131,6 @@ footer {
     color: #555;
 }
 
-/* Agregado nuevo padding-top para main */
 main {
-    padding-top: 120px; /* Asegúrate de que este valor sea al menos la altura de tu header */
+    padding-top: 120px; /* Espacio para el header fijo */
 }
