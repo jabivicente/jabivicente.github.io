@@ -109,6 +109,12 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+}
+
+.project:first-child {
+    margin-top: 120px; /* Espacio adicional para compensar el header fijo */
+}
+
 .project:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
 }
